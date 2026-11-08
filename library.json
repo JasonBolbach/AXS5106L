@@ -1,0 +1,26 @@
+{
+  "name": "AXS5106L",
+  "version": "1.0.0",
+  "description": "Standalone Arduino driver for the AXS5106L capacitive touch controller, plus a LovyanGFX configuration for the Waveshare ESP32-C6-Touch-LCD-1.47 (JD9853 172x320).",
+  "keywords": "touch, axs5106l, lovyangfx, jd9853, waveshare, esp32-c6, display",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JasonBolbach/AXS5106L.git"
+  },
+  "authors": [
+    { "name": "Jason Bolbach", "maintainer": true }
+  ],
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platforms": "espressif32",
+  "dependencies": [
+    { "owner": "lovyan03", "name": "LovyanGFX", "version": "^1.2.0" }
+  ],
+  "headers": ["AXS5106L.h", "LGFX_Waveshare_C6_Touch_147.hpp"],
+  "examples": [
+    { "name": "RGBTouch", "base": "examples/RGBTouch", "files": ["RGBTouch.ino", "platformio.ini"] }
+  ],
+  "export": {
+    "exclude": [".github", ".pio"]
+  }
+}
