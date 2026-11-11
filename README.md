@@ -19,9 +19,12 @@ PlatformIO / Arduino library for the **Waveshare ESP32-C6-Touch-LCD-1.47**:
 
 ```ini
 lib_deps =
-    https://github.com/JasonBolbach/AXS5106L.git
+    jasonbolbach/AXS5106L@^1.0.0
     lovyan03/LovyanGFX@^1.2.36
 ```
+
+Or from the CLI: `pio pkg install --library "jasonbolbach/AXS5106L"`.
+To track the latest unreleased code use `https://github.com/JasonBolbach/AXS5106L.git`.
 
 The board works with the pioarduino platform and `board = esp32-c6-devkitc-1`. See [examples/RGBTouch/platformio.ini](examples/RGBTouch/platformio.ini) for a complete env.
 
